@@ -1,0 +1,61 @@
+/* 1. IMPORTS */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+/* 2. VARIABLES */
+
+
+/* 3. TYPOGRAPHY */
+*:not(.fa){
+  font-family: 'Work Sans', sans-serif
+}
+
+/* 4.  UTILITY STYLES */
+.center {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-header{
+  color: var(--dark)
+}
+
+.profile-header:hover{
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.profile-tab{
+  transition: all 0.2s ease;
+  color: var(--dark);
+  text-decoration: none;
+
+  &:hover{
+    background: white;
+    box-shadow:  0 .125rem .25rem rgba(0,0,0,.075)!important;
+    text-decoration: none !important;
+
+    @at-root & *{
+      text-decoration: none !important;
+    }
+  }
+
+  &-active{
+    background: white;
+    box-shadow:  0 .125rem .25rem rgba(0,0,0,.075)!important;
+    text-decoration: none !important;
+    color: var(--dark);
+  }
+}
+
+.user-card{
+  transition: all 0.2s ease;
+}
+
+.user-card:hover{
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+
+/* 5. MODIFICATIONS */
